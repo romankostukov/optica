@@ -1,0 +1,67 @@
+.header {
+    left: 0;
+    right: 0;
+}
+.header_banner {
+    padding-top: 5px;
+    height: 30px;
+    background-color: $blue;
+    text-align: center;
+    span {
+        font-size: 14px;
+        font-weight: 400;
+        color:$black;
+        letter-spacing: 0.4px;
+    }
+
+    @include media('<=desktop') {
+        display: none;
+    }
+}
+a {
+    text-decoration: none;
+}
+.header_wrapper {
+    display: flex;
+    height: 127px;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media('<=desktop') {
+        height: 80px;
+        display: block;
+        text-align: center;
+    }
+    .logo {
+        font-size: 63px;
+        font-weight: 900;
+        // color: $blue;
+        margin-top: 11px;
+        margin-left: 5px;
+        // margin-left: -143px;
+        transition: opacity 0.5s;
+
+        @include media('<=desktop') {
+            padding-top: 25px;
+            margin: 0;
+        }
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+    .header_phone {
+        a {
+            color: $white;
+            font-weight: 700;
+            font-size: 30px;
+            transition: opacity 0.3s;
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+
+        @include media('<=desktop') {
+            display: none;
+        }
+    }
+}

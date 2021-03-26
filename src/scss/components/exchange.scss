@@ -1,0 +1,177 @@
+.exchange {
+    // position: relative;
+    text-align: center;
+    padding-top: 27px;
+    margin-bottom: 16px;
+    h1 {
+        font-weight: 400;
+        text-transform: uppercase;
+        // letter-spacing: 2px; 
+        margin-bottom: 2px;
+        word-spacing: 21px;
+
+        @include media('<=desktop') {
+            display: none;
+        }
+    }
+    .exchange_data {
+        color: $white;
+        font-size: 15px;
+        opacity: 0.5;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+    }
+    .section_exchange {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 35px;
+        margin-bottom: 17px;
+        .exchange_text {
+            display: block;
+            width: 78px;
+            padding-top: 59px;
+            padding-left: 8px;
+
+            @include media('<=phone') {
+                padding: 70px 10px 0 0;
+            }
+            .text {
+                padding-top: 73px;
+
+                @include media('<=phone') {
+                    padding-top: 50px;
+                }
+                p {
+                    font-size: 19px;
+                    font-weight: 400;
+                    color: $white;
+                    margin-bottom: 0px;
+                    letter-spacing: 1px;
+                    
+                    @include media('<=phone') {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        .exchange_link {
+            // position: relative;
+            width: 31%;
+            margin: 0;
+            h2 {
+            margin-bottom: 25px;
+
+            @include media('<=desktop') {
+                font-weight: 400;
+            }
+            }
+            span {
+                color: $white;
+            }
+            
+            .exchange_holder {
+                position: relative;
+                display: inline-block;
+                padding: 0 52px;
+                font-size: 14px;
+                color: $white;
+                font-size: 65px;
+                font-weight: 900;
+                letter-spacing: 6px;
+
+                @include media('<=phone') {
+                    font-size: 40px;
+                    padding: 0px;
+                }
+            }
+            .exchange_link_buy {
+                margin-bottom: 30px;
+                // padding-right: 52px;
+            }
+            .exchange_link_sale{
+                // padding-right: 52px;
+            }
+            .exchange_link_container {
+                position: relative;
+                .arrow {
+                    position: absolute;
+                    top: -6px;
+                    right: -22px;
+                    display: flex;
+                    align-items: center;
+
+                    @include media('<=phone') {
+                        right: -66px;
+                    }
+                    i {
+                        font-size: 24px;
+
+                        @include media('<=phone') {
+                            font-size: 20px;
+                        }
+                    }
+                    small {
+                        color: $white;
+                        font-size: 16px;
+                        font-weight: 400;
+                        margin-bottom: 8px;
+                        letter-spacing: 0;
+
+                        @include media('<=phone') {
+                            font-size: 14px;
+                        }
+                    }
+
+                    @include media('<=desktop') {
+                        // right: 225px;
+                    }
+                }
+            }
+
+            @include media('<=desktop') {
+                padding-right: 78px;
+            }
+        }
+    }
+
+    @include media('<=desktop') {
+        padding-top: 15px;
+        margin-bottom: 70px;
+    }
+
+    .slider {
+        overflow: hidden;
+    }
+    .swiper-pagination {
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        .swiper-pagination-bullet {
+            background-color: $white;
+            opacity: 1;
+            margin: 0 8px;
+        }
+        .swiper-pagination-bullet-active {
+            position: relative;
+            width: 8px;
+            height: 8px;
+            background-color: #1FFFE5;
+            &::before {
+                position: absolute;
+                content: '';
+                display: block;
+                top: -3px;
+                left: -3px;
+                height: 14px;
+                width: 14px;
+                border-radius: 50%;
+                border: 1px solid #1FFFE5;
+            }
+        }
+        @include media('>=desktop') {
+            display: none;
+        }
+       }
+}

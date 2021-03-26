@@ -1,0 +1,14 @@
+body {
+    background-color: $darkblue;
+    margin: 0 auto;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.container {
+    max-width: 1276px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+}

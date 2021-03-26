@@ -1,0 +1,58 @@
+.services {
+    padding-top: 156px;
+    text-align: center;
+    padding-left: 24px;
+    margin-bottom: 80px;
+
+    @include media('<=desktop') {
+        padding-top: 60px;
+        padding-left: 0px;
+    }
+    h3 {
+        font-size: 28px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin-bottom: 126px;
+        word-spacing: 14px;
+
+        @include media('<=desktop') {
+            margin-bottom: 56px;
+        }
+    }
+    .services_list {
+        display: flex;
+        justify-content: space-between;
+        a {
+            transition: opacity 0.3s;
+            // width: 25%;
+            i {
+                font-size: 96px;
+            }
+            h4 {
+                margin-top: 61px;
+                font-size: 20px;
+                text-transform: uppercase;
+                font-weight: 400;
+
+                @include media('<=desktop') {
+                    margin-top: 62px;
+                    margin-bottom: 72px;
+                }
+            }
+            &:hover {
+                opacity: 0.4;
+            }
+
+            @include media('<=widescreen') {
+                width: 20%;
+            }
+        }
+
+        @include media('<=desktop') {
+            display: block;
+        }
+    }
+
+    
+}

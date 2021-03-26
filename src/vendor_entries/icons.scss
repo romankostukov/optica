@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon/icomoon.eot?y013y9');
+    src:  url('../fonts/icomoon/icomoon.eot?y013y9#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon/icomoon.ttf?y013y9') format('truetype'),
+      url('../fonts/icomoon/icomoon.woff?y013y9') format('woff'),
+      url('../fonts/icomoon/icomoon.svg?y013y9#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-bitcoin:before {
+    content: "\e900";
+    color: #9bfff4;
+  }
+  .icon-caviar:before {
+    content: "\e901";
+    color: #9bfff4;
+  }
+  .icon-down:before {
+    content: "\e902";
+    color: #ff468b;
+  }
+  .icon-logo:before {
+    content: "\e903";
+    color: #fff;
+  }
+  .icon-ukr:before {
+    content: "\e904";
+    color: #9bfff4;
+  }
+  .icon-up:before {
+    content: "\e905";
+    color: #1fffe5;
+  }
+  .icon-world:before {
+    content: "\e906";
+    color: #9bfff4;
+  }

@@ -1,0 +1,123 @@
+.location {
+    position: relative;
+    // display: flex;
+    padding-top: 70px;
+    .location_top {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        ::before {
+            content: '';
+            position: absolute;
+            left: 147px;
+            top: 47px;
+            border: 18px solid transparent;
+            border-top: 18px solid $darkblue;
+            display: block;
+            width: 0;
+            height: 0;
+        }
+        .location_top_link {
+            padding-left: 9px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 19px;
+            align-items: baseline;
+            strong {
+                color: $white;
+                text-transform: uppercase;
+                font-size: 22px;
+                margin-right: 12px;
+
+                @include media('<=phone') {
+                    font-size: 20px;
+                }
+            }
+            p {
+                color: $white;
+                font-size: 16px;
+                font-family: Lato;
+                margin: 0;
+                word-spacing: 4px;
+
+                @include media('<=phone') {
+                    font-size: 12px;
+                }
+            }
+            span {
+                color: $white;
+                font-size: 16px;
+                text-transform: uppercase;
+                font-weight: 700;
+                margin-right: 6px;
+            }
+            .time {
+                color: $white;
+                font-size: 16px;
+                text-transform: uppercase;
+                font-weight: 100;
+                margin: 0;
+                margin-right: 4px;
+
+            }
+
+            @include media('<=desktop') {
+                justify-content: center;
+            padding-left: 0px;
+            }
+        }
+        .location_phone {
+            display: none;
+            a {
+                color: $white;
+                font-weight: 700;
+                font-size: 30px;
+                transition: opacity 0.3s;
+                &:hover {
+                    opacity: 0.6;
+                }
+                
+            }
+            @include media('<=desktop'){
+                display: block;
+                text-align: center;
+                margin-bottom: 135px;
+            }
+        }
+        .location_time {
+            @include media('<=desktop') {
+                margin-bottom: 91px;
+                flex-wrap: wrap;
+                strong {
+                    display: inline-block;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+        
+        @include media('<=desktop') {
+            flex-direction: column-reverse;
+        }
+    }
+    .location_map {
+        overflow: hidden;
+
+        @include media('<=desktop') {
+            display: none;
+        }
+    }
+    img {
+        position: absolute;
+        right: 325px;
+        bottom: 73px;
+
+        @include media('<=desktop') {
+            // display: block;
+            position: relative;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+        }
+    }
+}
